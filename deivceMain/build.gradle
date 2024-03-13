@@ -2,7 +2,6 @@ plugins {
     id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
 }
-
 android {
     namespace 'com.octantis.prime.android.device.deivcemain'
     compileSdk 34
@@ -31,6 +30,7 @@ android {
 
 
 dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation 'androidx.core:core-ktx:1.12.0'
     implementation 'androidx.appcompat:appcompat:1.2.0'
     testImplementation 'junit:junit:4.12'
